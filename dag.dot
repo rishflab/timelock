@@ -1,0 +1,33 @@
+digraph structs {
+    node [shape=record];
+    a [shape=record,label="{a |{ stake: 90 | total stake: 310 }| {fee: 0.1 | total fees: 2.2} }"];
+    b [shape=record,label="{b |{ stake: 50 | total stake: 110 }| {fee: 0.1 | total fees: 0.7} }"];
+    c [shape=record,label="{c |{ stake: 60 | total stake: 160 }| {fee: 0.2 | total fees: 1.1} }"];
+    d [shape=record,label="{d |{ stake: 50 | total stake: 110 }| {fee: 0.3 | total fees: 1.0} }"];
+    e [shape=record,label="{e |{ stake: 30 | total stake: 50 }| {fee: 0.2 | total fees: 0.5} }"];
+    f [shape=record,label="{f |{ stake: 30 | total stake: 50 }| {fee: 0.3 | total fees: 0.6} }"];
+    g [shape=record,label="{g |{ stake: 10 | total stake: 10 }| {fee: 0.1 | total fees: 0.1} }"];
+    h [shape=record,label="{h |{ stake: 10 | total stake: 10 }| {fee: 0.1 | total fees: 0.1} }"];
+    i [shape=record,label="{i |{ stake: 10 | total stake: 10 }| {fee: 0.2 | total fees: 0.2} }"];
+    j [shape=record,label="{j |{ stake: 10 | total stake: 10 }| {fee: 0.1 | total fees: 0.1} }"];
+    k [shape=record,label="{k |{ stake: 10 | total stake: 10 }| {fee: 0.1 | total fees: 0.1} }"];
+    
+    a -> c;
+    a -> d;
+    
+    b -> g;
+    b -> e;
+
+    c -> e;
+    c -> f;
+
+    d -> f;
+    d -> k;
+
+    e -> h;
+    e -> i;
+
+    f -> i;
+    f -> j;
+    
+}
