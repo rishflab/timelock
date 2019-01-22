@@ -15,8 +15,10 @@ The reward fee is a small amount Fantom allocated by the sender to pool used to 
 
 A new block is created when the total amount staked in any subgraph of the DAG is has reached a certain percentage of the total Fantom in circulation. A large fraction, for exampe 50%, will mean the the the network will be very secure as a malicious actor will need to own 50% of the total amount of coin in circulation. However it will take very long to confirm a new block with a 50% stake requirement. [Stake locking](#Stake-Locking) allows for a fast initial confirmation time with gradually increasing security as more blocks are confirmed. 
 
+
 ![Screenshot](dag.png)
-*DAG with stake requirements and reward fees* 
+*DAG with stake requirements and reward fees* The base stake requirement is 10 and increases proportional to the number of parent transactions. The reward fee is set by the transaction submitter to incentivise the network of stakers
+to include that transaction in the next block.  
 
 
 ## Stake Locking
