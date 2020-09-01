@@ -9,11 +9,11 @@ This document contains two proposal for improvements to DAG based consensus algo
 
 ## Progressive Staking: Proof-of-Stake for DAG based blockchains
 
-Each submitted transaction has a reward fee and stake requirement. In order for a transaction to be accepted by the network, another participant must stake Fantom equal to the stake requirement. The stake requirement for transaction is proportional to the number of parent transactions since the last block. This is because to a staker needs to confirm all parent transactions since the last block to determine if a proposed transaction is valid.
+Each submitted transaction has a reward fee and stake requirement. In order for a transaction to be accepted by the network, another participant must stake coins equal to the stake requirement. The stake requirement for transaction is proportional to the number of parent transactions since the last block. This is because to a staker needs to confirm all parent transactions since the last block to determine if a proposed transaction is valid.
 
-The reward fee is a small amount Fantom allocated by the sender to pool used to pay rewards to the stakers. The reward fee allows transaction submitters to incentivise stakers to verify their transaction and increase the chance it will included in the next block. The total amount of Fantom in the reward pool is split amongst the stakers proportional to the amount they staked.
+The reward fee is a small amount coins allocated by the sender to pool used to pay rewards to the stakers. The reward fee allows transaction submitters to incentivise stakers to verify their transaction and increase the chance it will included in the next block. The total amount of coins in the reward pool is split amongst the stakers proportional to the amount they staked.
 
-A new block is created when the total amount staked in any subgraph of the DAG is has reached a certain percentage of the total Fantom in circulation. A large fraction, for exampe 50%, will mean the the the network will be very secure as a malicious actor will need to own 50% of the total amount of coin in circulation. However it will take very long to confirm a new block with a 50% stake requirement. [Stake locking](#Stake-Locking) allows for a fast initial confirmation time with gradually increasing security as more blocks are confirmed. 
+A new block is created when the total amount staked in any subgraph of the DAG is has reached a certain percentage of the total coins in circulation. A large fraction, for exampe 50%, will mean the the the network will be very secure as a malicious actor will need to own 50% of the total amount of coin in circulation. However it will take very long to confirm a new block with a 50% stake requirement. [Stake locking](#Stake-Locking) allows for a fast initial confirmation time with gradually increasing security as more blocks are confirmed. 
 
 
 ![Screenshot](dag.png)
